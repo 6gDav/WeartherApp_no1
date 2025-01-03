@@ -15,6 +15,11 @@ body
     margin-right: 5%;
 }
 
+#place-header
+{
+    font-size: 60px;
+}
+
 #clock-div
 {
     background-color: rgba(190, 189, 189, 0.555);

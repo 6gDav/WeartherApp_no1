@@ -1,4 +1,3 @@
-console.log('inputPlaceEL');
 import { getPlaceInput } from './get-user-input.js';
 document.addEventListener("DOMContentLoaded", () => {
     const inputBtn = document.getElementById('search-btn');
