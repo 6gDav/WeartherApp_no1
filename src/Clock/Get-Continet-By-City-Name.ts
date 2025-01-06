@@ -1,8 +1,6 @@
-//import { Infos } from './ImportantInfos.js';
-
-export const getContinentByCity = async (city: string): Promise<string | null> => {
+export const getContinentByCity = async (city: NullAndString): Promise<string | null> => {
     const apiKey = 'b56615eb035c4135b259729965782e55';
-    const url = `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(city)}&key=${apiKey}`;
+    const url = `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(city ?? "")}&key=${apiKey}`;
 
     try
     {
@@ -15,7 +13,7 @@ export const getContinentByCity = async (city: string): Promise<string | null> =
 
         const data = await response.json();
 
-        if (data.results.lenght === 0)
+        if (data.results.length === 0)
         {
             return null;
         }

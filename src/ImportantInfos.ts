@@ -17,12 +17,12 @@ export class Infos
     //#region Town Continent
     private static continent: string = ''; //filed
  
-    static get getContinent(): string
+    static get Continent(): string
     {
         return this.continent;
     }
 
-    static set getContinent(value: string)
+    static set Continent(value: string)
     {
         this.continent = value;
     }

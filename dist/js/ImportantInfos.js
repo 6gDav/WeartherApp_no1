@@ -5,10 +5,10 @@ export class Infos {
     static set TownName(value) {
         this.townName = value;
     }
-    static get getContinent() {
+    static get Continent() {
         return this.continent;
     }
-    static set getContinent(value) {
+    static set Continent(value) {
         this.continent = value;
     }
 }
